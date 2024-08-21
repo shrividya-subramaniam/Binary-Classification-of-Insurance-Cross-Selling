@@ -46,11 +46,8 @@ Vintage
 
 ## Data Preprocessing
 1.Train and test dataframes are merged.
-
 2. Region_Code, Policy_Sales_Channel, Annual_Premium columns are casted into integer type.
-   
 3.**Missing Value Imputation** – There are no missing values in train or test dataset.
-
 4.**Encoding categorical variables**
 - Gender, Vehicle_Age and Vehicle_Damage are encoding with numerical mapping.
 5.**Feature Generation**
