@@ -48,7 +48,7 @@ Vintage
 1. Train and test dataframes are merged.
 2. Region_Code, Policy_Sales_Channel, Annual_Premium columns are casted into integer type.
 3. **Missing Value Imputation** - there are no missing values in train or test dataset.
-4. **Encoding categorical variables** - Gender, Vehicle_Age and Vehicle_Damage are encoding with numerical mapping.
+4. **Encoding categorical variables** - Gender, Vehicle_Age and Vehicle_Damage are encoded with numerical mapping.
 5. **Feature Generation** - Interaction variables are created by combining the Previously_Insured column with Annual_Premium, Vehicle_Age, Vehicle_Damage, and Vintage respectively using pd.factorize.
 6. Since the dataset is very large, the features are downcasted into their respective data types to optimise memory usage.
 7. The preprocessed dataset is then split into X, y and test dataset. 
@@ -57,7 +57,7 @@ Vintage
 ## Prediction Approach
 - As the train dataset is very large and computationally expensive, ensemble models such as LightGBM, XGBoost and CatBoost are evaluated using Stratified K-fold Cross Validation.
 - CatBoost model is selected as the final model as it achieved a ROC AUC score than other models.
-- The final CatBoost model is trained with 2 fold Stratified K-fold Cross Validation using NVidia P100 GPU.(Only 2 folds are used in cross validation due to memory constraints.)
+- The final CatBoost model with hyperparameter tuning is trained with 2 fold Stratified K-fold Cross Validation using Nvidia P100 GPU.(Only 2 folds are used in cross validation due to memory constraints.)
 - The model achieved a ROC AUC score of 0.89507 and 0.89482 on public leaderboard and private leaderboard respectively. 
 
 
