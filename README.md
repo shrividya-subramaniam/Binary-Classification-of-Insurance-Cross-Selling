@@ -12,7 +12,7 @@ Submissions are evaluated using **area under the ROC curve** using the predicted
 
 ## Data Dictionary
 
-### Train Data
+#### Train Data
 Feature |
 --- | 
 id                    
@@ -28,7 +28,7 @@ Policy_Sales_Channel
 Vintage               
 Response     
 
-### Test Data
+#### Test Data
 Feature |
 --- |
 id                    
