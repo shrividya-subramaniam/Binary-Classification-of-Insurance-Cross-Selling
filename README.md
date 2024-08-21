@@ -1,12 +1,14 @@
 # Binary Classification of Insurance Cross Selling
  Solution to Kaggle Playground Prediction Competition (Season 4, Episode 7)
 
+
 ## Problem Statement
 The objective of this competition is to predict which customers respond positively to an automobile insurance offer.
 
 
 ## Evaluation Metric
 Submissions are evaluated using **area under the ROC curve** using the predicted probabilities and the ground truth targets.
+
 
 ## Data Dictionary
 
@@ -41,6 +43,7 @@ Annual_Premium
 Policy_Sales_Channel  
 Vintage 
 
+
 ## Data Preprocessing
 1.Train and test dataframes are merged.
 2. Region_Code, Policy_Sales_Channel, Annual_Premium columns are casted into integer type. 
@@ -51,6 +54,7 @@ Vintage
 - Interaction variables are created by combining the Previously_Insured column with Annual_Premium, Vehicle_Age, Vehicle_Damage, and Vintage respectively using pd.factorize.
 6. Since the dataset is very large, the features are downcasted into their respective data types to optimise memory usage.
 7. The preprocessed dataset is then split into X, y and test dataset. 
+
 
 ## Prediction Approach
 - As the train dataset is very large and computationally expensive, ensemble models such as LightGBM, XGBoost and CatBoost are evaluated using Stratified K-fold Cross Validation.
