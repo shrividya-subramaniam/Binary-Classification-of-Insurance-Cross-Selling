@@ -1,5 +1,5 @@
 # Binary Classification of Insurance Cross Selling
- Solution to Kaggle Playground Prediction Competition (Season 4, Episode 7)
+ Solution to [Kaggle Playground Prediction Competition (Season 4, Episode 7)](https://www.kaggle.com/competitions/playground-series-s4e7/overview)
 
 
 ## Problem Statement
