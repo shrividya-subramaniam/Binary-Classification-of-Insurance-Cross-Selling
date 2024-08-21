@@ -47,12 +47,9 @@ Vintage
 ## Data Preprocessing
 1. Train and test dataframes are merged.
 2. Region_Code, Policy_Sales_Channel, Annual_Premium columns are casted into integer type.
-3. **Missing Value Imputation** 
-- There are no missing values in train or test dataset.
-4. **Encoding categorical variables**
-- Gender, Vehicle_Age and Vehicle_Damage are encoding with numerical mapping.
-5. **Feature Generation**
-- Interaction variables are created by combining the Previously_Insured column with Annual_Premium, Vehicle_Age, Vehicle_Damage, and Vintage respectively using pd.factorize.
+3. **Missing Value Imputation** - there are no missing values in train or test dataset.
+4. **Encoding categorical variables** - Gender, Vehicle_Age and Vehicle_Damage are encoding with numerical mapping.
+5. **Feature Generation** - Interaction variables are created by combining the Previously_Insured column with Annual_Premium, Vehicle_Age, Vehicle_Damage, and Vintage respectively using pd.factorize.
 6. Since the dataset is very large, the features are downcasted into their respective data types to optimise memory usage.
 7. The preprocessed dataset is then split into X, y and test dataset. 
 
